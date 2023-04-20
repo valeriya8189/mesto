@@ -25,7 +25,6 @@ function handleProfileFormSubmit(evt) {
     profileJob.textContent = jobInput.value;
 
     closePopup(formProfile);
-    console.log('123');
 }
 
 buttonSave.addEventListener('submit', handleProfileFormSubmit);
