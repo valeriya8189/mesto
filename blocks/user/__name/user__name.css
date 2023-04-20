@@ -1,0 +1,22 @@
+.user__name {
+    margin: 0;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 94%;
+    color: #FFFFFF;
+
+    max-width: 294px;
+    padding-right: 18px;
+}
+
+@media (max-width:890px) {
+    .user__name {
+        font-size: 27px;
+        line-height: 100%;
+        max-width: 189px;
+
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,11 @@
+.close__icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width:890px) {
+    .close__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

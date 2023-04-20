@@ -1,0 +1,11 @@
+.user_data {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:890px) {
+    .user_data {
+        padding-top: 26px;
+        width: 100%;
+    }
+}

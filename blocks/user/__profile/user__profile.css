@@ -1,0 +1,18 @@
+.user__profile {
+    margin: 0;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    max-width: 336px;
+    padding-top: 16px;
+}
+
+@media(max-width:890px) {
+    .user__profile {
+        max-width: 282px;
+        font-size: 14px;
+        padding-top: 14px;
+    }
+}

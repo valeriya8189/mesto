@@ -1,0 +1,17 @@
+.form-edit {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    min-height: 330px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+@media(max-width:890px) {
+    .form-edit {
+        max-width: 282px;
+        min-height: 322px;
+        padding: 25px 22px;
+    }
+}

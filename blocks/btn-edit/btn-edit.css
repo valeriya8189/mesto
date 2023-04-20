@@ -1,0 +1,25 @@
+.btn-edit {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.btn-edit:hover {
+    opacity: 0.6;
+}
+
+@media (max-width:890px) {
+    .btn-edit {
+        width: 18px;
+        height: 18px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}

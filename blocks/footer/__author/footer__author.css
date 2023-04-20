@@ -1,0 +1,17 @@
+.footer__author {
+    max-width: 318px;
+    margin: 0;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #545454;
+    padding-bottom: 60px;
+}
+
+@media(max-width:890px) {
+    .footer__author {
+        font-size: 14px;
+        padding-bottom: 36px;
+    }
+}

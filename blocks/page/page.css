@@ -1,0 +1,11 @@
+.page {
+    max-width: 1280px;
+    height: 100%;
+    background-color: #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}

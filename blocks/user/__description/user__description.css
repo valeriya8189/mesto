@@ -1,0 +1,13 @@
+.user__description {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:890px) {
+    .user__description {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+}

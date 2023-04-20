@@ -1,0 +1,8 @@
+.user__form {
+    flex-direction: column;
+    padding-right: 18px;
+}
+
+@media(max-width:890px) {
+    .user__form {}
+}

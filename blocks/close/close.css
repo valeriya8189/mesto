@@ -1,0 +1,15 @@
+.close {
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    cursor: pointer;
+}
+
+@media (max-width:890px) {
+    .close {
+        position: absolute;
+        top: -32px;
+        right: 0;
+        cursor: pointer;
+    }
+}

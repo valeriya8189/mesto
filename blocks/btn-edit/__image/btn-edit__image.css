@@ -1,0 +1,12 @@
+.btn-edit__image {
+    width: 7.7px;
+    height: 7.7px;
+}
+
+@media (max-width:890px) {
+    .btn-edit__image {
+        width: 5.25px;
+        height: 5.25px;
+
+    }
+}
