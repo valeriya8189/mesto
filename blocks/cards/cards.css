@@ -1,7 +1,6 @@
 .cards {
     width: 100%;
     max-width: 880px;
-    min-height: 744px;
     padding-top: 51px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));

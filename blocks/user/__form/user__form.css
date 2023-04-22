@@ -4,5 +4,7 @@
 }
 
 @media(max-width:890px) {
-    .user__form {}
+    .user__form {
+        padding-right: 0;
+    }
 }

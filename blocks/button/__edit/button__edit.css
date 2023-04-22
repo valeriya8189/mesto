@@ -1,18 +1,11 @@
-.btn-edit {
+.button__edit {
     width: 24px;
     height: 24px;
-
     border: 1px solid #FFFFFF;
-
-
-
-
 }
 
-.btn-edit:hover {}
-
 @media (max-width:890px) {
-    .btn-edit {
+    .button__edit {
         width: 18px;
         height: 18px;
         align-items: center;

@@ -1,11 +1,14 @@
 .card__button {
     background-image: url(../../../images/Group.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+
     width: 22px;
     height: 19px;
     cursor: pointer;
     transition: opacity .3s ease-in-out;
+    border: 0;
+    background-color: transparent;
+    flex-shrink: 0;
 }
 
 .card__button:hover {

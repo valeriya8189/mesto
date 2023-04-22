@@ -1,4 +1,4 @@
-.submit {
+.form-edit__submit {
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -15,14 +15,15 @@
     padding-bottom: 18px;
     cursor: pointer;
     transition: opacity .3s ease-in-out;
+    margin-top: 18px;
 }
 
-.submit:hover {
+.form-edit__submit:hover {
     opacity: 0.8;
 }
 
 @media (max-width:890px) {
-    .submit {
+    .form-edit__submit {
         width: 238px;
         height: 46px;
         text-align: center;

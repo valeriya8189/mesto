@@ -19,81 +19,78 @@
                 <img class="user__avatar" src="./images/Avatar.png" alt="Аватар">
                 <div class="user__form">
                     <div class="user__data">
-                        <div class="user__name">Жак-Ив Кусто</div>
-                        <button type="button" class="btn-edit"><img class="btn-edit__image" src="./images/edit.png"
-                                alt="иконка"></button>
+                        <h1 class="user__name">Жак-Ив Кусто</h1>
+                        <button type="button" class="button button__edit" aria-label="Edit"><img
+                                class="button__image-edit" src="./images/edit.svg" alt="иконка"></button>
                     </div>
-                    <div class="user__profile">Исследователь океана</div>
+                    <p class="user__profile">Исследователь океана</p>
                 </div>
 
-                <div class="popup">
-                    <div class="popup__container">
-                        <div class="form-edit">
-                            <h1 class="form-edit__title">Редактировать профиль</h1>
-                            <input class="form-edit__name" type="text" value="Жак-Ив Кусто">
-                            <input class="form-edit__profile" type="text" value="Исследователь океана">
-                            <button class="submit">Сохранить</button>
-                            <span class="close"><img class="close__icon" src="./images/Close_Icon.png"
-                                    alt="иконка"></span>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <button type="button" class="btn-add"><img class="btn-add__image" src="./images/Vector.png"
-                    alt="иконка"></button>
-
+            <button type="button" class="button button__add" aria-label="Add"><img
+                    class="button__image button__image-add" src="./images/Vector.svg" alt="иконка"></button>
         </section>
+        <div class="popup">
+            <div class="popup__container">
+                <form name="form-edit" class="form-edit">
+                    <h2 class="form-edit__title">Редактировать профиль</h2>
+                    <input name="name" class="form-edit__input form-edit__input_type_name" type="text"
+                        value="Жак-Ив Кусто">
+                    <input name="job" class="form-edit__input form-edit__input_type_profile" type="text"
+                        value="Исследователь океана">
+                    <button type="button" class="form-edit__submit">Сохранить</button>
+                    <button type="button" class="form-edit__close" aria-label="Close"><img class="form-edit__icon"
+                            src="./images/Close_Icon.svg" alt="иконка"></button>
+                </form>
+            </div>
+        </div>
         <section class="cards block-position">
-            <div class="card">
+            <article class="card">
                 <img class="card__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <div class="card__content">
-                    <p class="card__text">Карачаевск</p>
-                    <div class="card__button"></div>
-
+                    <h3 class="card__text">Карачаевск</h3>
+                    <button type="button" class="card__button" aria-label="Like"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__image" src="./images/elbrus.jpg" alt="Эльбрус">
                 <div class="card__content">
-                    <p class="card__text">Гора Эльбрус</p>
-                    <div class="card__button"></div>
-
+                    <h3 class="card__text">Гора Эльбрус</h3>
+                    <button type="button" class="card__button" aria-label="Like"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__image" src="./images/dombai.jpg" alt="Домбай">
                 <div class="card__content">
-                    <p class="card__text">Домбай</p>
-                    <div class="card__button"> </div>
-
+                    <h3 class="card__text">Домбай</h3>
+                    <button type="button" class="card__button" aria-label="Like"> </button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__image" src="./images/elbrus1.jpg" alt="Эльбрус">
                 <div class="card__content">
-                    <p class="card__text">Гора Эльбрус</p>
-                    <div class="card__button"> </div>
-
+                    <h3 class="card__text">Гора Эльбрус</h3>
+                    <button type="button" class="card__button" aria-label="Like"> </button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__image" src="./images/dobbai1.jpg" alt="Домбай">
                 <div class="card__content">
-                    <p class="card__text">Домбай</p>
-                    <div class="card__button"> </div>
+                    <h3 class="card__text">Домбай</h3>
+                    <button type="button" class="card__button" aria-label="Like"> </button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__image" src="./images/karachaevsk1.jpg" alt="Карачаево-Черкессия">
                 <div class="card__content">
-                    <p class="card__text">Карачаево-Черкессия</p>
-                    <div class="card__button"> </div>
+                    <h3 class="card__text">Карачаево-Черкессия</h3>
+                    <button type="button" class="card__button" aria-label="Like"> </button>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
     <footer class="footer block-position">
-        <div class="footer__author">&copy; 2023 Mesto Russia</div>
+        <p class="footer__author">&copy; 2023 Mesto Russia</p>
     </footer>
     <script defer src="./scripts/script.js"></script>
 </body>
