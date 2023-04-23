@@ -1,7 +1,7 @@
 const buttonEditElement = document.querySelector('.user__button-edit');
 const popupElement = document.querySelector('.popup');
 const buttonClose = popupElement.querySelector('.form-edit__button-close');
-const buttonSave = document.querySelector('.form-edit__button-submit');
+/*const buttonSave = document.querySelector('.form-edit__button-submit');*/
 /*const UserForm = document.querySelector('.user__form');*/
 const nameInput = document.querySelector('.form-edit__input_type_name');
 const jobInput = document.querySelector('.form-edit__input_type_profile');
@@ -25,12 +25,12 @@ function handleProfileFormSubmit(evt) {
     // Получите значение полей jobInput и nameInput из свойства value
     profileName.textContent = nameInput.value;
     profileJob.textContent = jobInput.value;
-    closePopup(formProfile);
+    closePopup();
 }
 
 editForm.addEventListener('submit', handleProfileFormSubmit);
 /*buttonSave.addEventListener('click', handleProfileFormSubmit);*/
-buttonSave.addEventListener('click', closePopup);
+/*buttonSave.addEventListener('click', closePopup);*/
 buttonEditElement.addEventListener('click', openPopup);
 buttonClose.addEventListener('click', closePopup);
 

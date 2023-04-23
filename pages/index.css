@@ -19,7 +19,6 @@
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/card/__content/card__content.css);
-@import url(../blocks/card/__icon/card__icon.css);
 @import url(../blocks/card/__text/card__text.css);
 @import url(../blocks/card/__button/card__button.css);
 @import url(../blocks/footer/footer.css);
@@ -29,14 +28,7 @@
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/form-edit/form-edit.css);
 @import url(../blocks/form-edit/__button-submit/form-edit__button-submit.css);
-@import url(../blocks/form-edit/__button-close/form-edit__-button-close.css);
-@import url(../blocks/form-edit/__icon/form-edit__icon.css);
+@import url(../blocks/form-edit/__button-close/form-edit__button-close.css);
 @import url(../blocks/form-edit/__input/form-edit__input.css);
 @import url(../blocks/form-edit/__title/form-edit__title.css);
-@import url(../blocks/card/__button/_type/card__button_type_active.css);
-
-
-@import url(../blocks/button/__add/button__add.css);
-@import url(../blocks/button/__edit/button__edit.css);
-@import url(../blocks/button/__image-add/button__image-add.css);
-@import url(../blocks/button/__image-edit/button__image-edit.css);
+@import url(../blocks/card/__button/_active/card__button_active.css);
