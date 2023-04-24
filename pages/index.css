@@ -29,6 +29,7 @@
 @import url(../blocks/form-edit/form-edit.css);
 @import url(../blocks/form-edit/__button-submit/form-edit__button-submit.css);
 @import url(../blocks/form-edit/__button-close/form-edit__button-close.css);
+@import url(../blocks/form-edit/__icon-close/form-edit__icon-close.css);
 @import url(../blocks/form-edit/__input/form-edit__input.css);
 @import url(../blocks/form-edit/__title/form-edit__title.css);
 @import url(../blocks/card/__button/_active/card__button_active.css);
