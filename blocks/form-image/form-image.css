@@ -1,0 +1,5 @@
+.form-image {
+    max-width: 75vw;
+    display: flex;
+    max-height: 75vh;
+}

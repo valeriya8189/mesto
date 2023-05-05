@@ -1,0 +1,4 @@
+.form-add {
+    display: flex;
+    flex-direction: column;
+}

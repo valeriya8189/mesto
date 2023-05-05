@@ -1,0 +1,27 @@
+.form-add__button-close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.form-add__button-close:hover {
+    opacity: 0.6;
+}
+
+@media (max-width:890px) {
+    .form-add__button-close {
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+}

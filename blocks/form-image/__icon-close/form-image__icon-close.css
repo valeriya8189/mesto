@@ -1,0 +1,11 @@
+.form-image__icon-close {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width:890px) {
+    .form-image__icon-close {
+        width: 20px;
+        height: 20px;
+    }
+}
