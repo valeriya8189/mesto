@@ -3,7 +3,7 @@ const buttonAddElement = document.querySelector('.user__button-add');
 const buttonCloseEdit = document.querySelector('.form-edit__button-close');
 const buttonCloseAdd = document.querySelector('.form-add__button-close');
 const buttonSaveCard = document.querySelector('form-add__button-submit');
-const buttonCloseImage = document.querySelector('.form-image__button-close');
+const buttonCloseImage = document.querySelector('.popup__button-close');
 
 const buttonDeleteCard = document.querySelector('.card__del');
 
@@ -102,7 +102,7 @@ function renderCard({ name, link }) {
     //open card
     cardElement.querySelector('.card__image').addEventListener('click', function (evt) {
         evt.preventDefault();
-        document.querySelector('.form-image').src = link;
+        document.querySelector('.popup__image').src = link;
         popupElementImage.classList.add('popup_opened');
     });
 
