@@ -32,29 +32,29 @@
         </section>
         <div class="popup popup_type_edit">
             <div class="popup__container">
-                <form name="form-edit" class="form-edit">
-                    <h2 class="form-edit__title">Редактировать профиль</h2>
-                    <input name="name" class="form-edit__input form-edit__input_type_name" type="text"
-                        value="Жак-Ив Кусто">
-                    <input name="job" class="form-edit__input form-edit__input_type_profile" type="text"
-                        value="Исследователь океана">
-                    <button type="submit" class="form-edit__button-submit">Сохранить</button>
-                    <button type="button" class="form-edit__button-close" aria-label="Close"><img
-                            class="form-edit__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
+                <form name="form" class="form form_type_edit">
+                    <h2 class="form__title">Редактировать профиль</h2>
+                    <input name="name" class="form__input form__input_type_name" type="text" value="Жак-Ив Кусто"
+                        required>
+                    <input name="job" class="form__input form__input_type_profile" type="text"
+                        value="Исследователь океана" required>
+                    <button type="submit" class="form__button-submit form__button-submit_add">Сохранить</button>
+                    <button type="button" class="form__button-close form__button-close_edit" aria-label="Close"><img
+                            class="form__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
                 </form>
             </div>
         </div>
         <div class="popup popup_type_new-card">
             <div class="popup__container">
-                <form name="form-add" class="form-add">
-                    <h2 class="form-add__title">Новое место</h2>
-                    <input name="name" class="form-add__input form-add__input_type_name-place" type="text"
+                <form name="form" class="form form_type_add">
+                    <h2 class="form__title">Новое место</h2>
+                    <input name="name" class="form__input form__input_type_name-place" type="text"
                         placeholder="Название" value="" required>
-                    <input name="link" class="form-add__input form-add__input_type_link" type="url"
+                    <input name="link" class="form__input form__input_type_link" type="url"
                         placeholder="Ссылка на катинку" value="" required>
-                    <button type="submit" class="form-add__button-submit">Сохранить</button>
-                    <button type="button" class="form-add__button-close" aria-label="Close"><img
-                            class="form-add__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
+                    <button type="submit" class="form__button-submit form__button-submit_add">Сохранить</button>
+                    <button type="button" class="form__button-close form__button-close_add" aria-label="Close"><img
+                            class="form__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
                 </form>
             </div>
         </div>

@@ -1,4 +1,4 @@
-.form-edit__input {
+.form__input {
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -15,13 +15,12 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.form-edit__input:last-child {
-
+.form__input:last-child {
     margin-bottom: 0;
 }
 
 @media(max-width:890px) {
-    .form-edit__input {
+    .form__input {
         max-width: 238px;
     }
 }
