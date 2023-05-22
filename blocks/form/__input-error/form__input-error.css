@@ -1,0 +1,9 @@
+.form__input-error {
+    font-size: 12px;
+    color: red;
+    box-sizing: border-box;
+}
+
+.form__input-error:last-child {
+    padding-bottom: 13px;
+}

@@ -32,12 +32,14 @@
         </section>
         <div class="popup popup_type_edit">
             <div class="popup__container">
-                <form name="form" class="form form_type_edit">
+                <form name="form" class="form form_type_edit" novalidate>
                     <h2 class="form__title">Редактировать профиль</h2>
-                    <input name="name" class="form__input form__input_type_name" type="text" value="Жак-Ив Кусто"
-                        required>
-                    <input name="job" class="form__input form__input_type_profile" type="text"
-                        value="Исследователь океана" required>
+                    <input name="name" id="name-input" class="form__input form__input_type_name" type="text"
+                        value="Жак-Ив Кусто" minlength="2" maxlength="40" required>
+                    <span class="form__input-error name-input-error" id="name-error"></span>
+                    <input name="job" id="job-input" class="form__input form__input_type_profile" type="text"
+                        value="Исследователь океана" minlength="2" maxlength="200" required>
+                    <span class="form__input-error job-input-error" id="job-error"></span>
                     <button type="submit" class="form__button-submit form__button-submit_add">Сохранить</button>
                     <button type="button" class="form__button-close form__button-close_edit" aria-label="Close"><img
                             class="form__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
@@ -49,9 +51,11 @@
                 <form name="form" class="form form_type_add">
                     <h2 class="form__title">Новое место</h2>
                     <input name="name" class="form__input form__input_type_name-place" type="text"
-                        placeholder="Название" value="" required>
+                        placeholder="Название" value="" minlength="2" maxlength="30" required>
+                    <span class="form__input-error name-input-error" id="name-error"></span>
                     <input name="link" class="form__input form__input_type_link" type="url"
                         placeholder="Ссылка на катинку" value="" required>
+                    <span class="form__input-error link-input-error" id="link-error"></span>
                     <button type="submit" class="form__button-submit form__button-submit_add">Сохранить</button>
                     <button type="button" class="form__button-close form__button-close_add" aria-label="Close"><img
                             class="form__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
@@ -83,7 +87,9 @@
             </div>
         </div>
     </template>
-    <script defer src="./scripts/script.js"></script>
+    <script defer src="./scripts/cards.js"></script>
+    <script defer src="./scripts/script.js" defer></script>
+    <script defer src="./scripts/validations.js" defer></script>
 </body>
 
 </html>
