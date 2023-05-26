@@ -2,6 +2,9 @@ const buttonEditElement = document.querySelector('.user__button-edit');
 const buttonAddElement = document.querySelector('.user__button-add');
 const buttonCloseEdit = document.querySelector('.form__button-close_edit');
 const buttonCloseAdd = document.querySelector('.form__button-close_add');
+
+const buttonSaveEdit = document.querySelector('form__button-submit_edit');
+
 const buttonSaveCard = document.querySelector('form__button-submit_add');
 const buttonCloseImage = document.querySelector('.popup__button-close');
 const buttonDeleteCard = document.querySelector('.card__del');
@@ -24,10 +27,6 @@ const buttonClose = document.querySelector('.form__button-close');
 
 
 const openPopup = function (modal) {
-    const error = document.querySelectorAll('.form__input-error');
-    error.forEach((item) => {
-        item.textContent = '';
-    });
     modal.classList.add('popup_opened');
     document.addEventListener('keydown', closePopupKeydownEsc);
     modal.addEventListener('click', closePopupOverlay);
@@ -88,15 +87,16 @@ function handleCardFormSubmit(e) {
 }
 
 editForm.addEventListener('submit', handleProfileFormSubmit);
+
 buttonEditElement.addEventListener('click', () => {
     nameInput.textContent = profileName.value;
     jobInput.textContent = profileJob.value;
+    const input = document.querySelector('.form__input');
     openPopup(popupElementEdit);
 });
 
 buttonAddElement.addEventListener('click', () => {
     openPopup(popupElementNewCard);
-    /* toggleButtonState(buttonSaveCard, editForm.checkValidity(), enableValidation);*/
 });
 
 const closePopupKeydownEsc = function (e) {
