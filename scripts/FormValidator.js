@@ -1,7 +1,7 @@
 export class FormValidator {
-    constructor(object, elementValidation) {
+    constructor(object, elementValid) {
         this._object = object;
-        this._element = elementValidation;
+        this._element = elementValid;
         this._submitElement = this._element.querySelector(this._object.submitButtonSelector)
     }
     _showError(inputElement, errorElement) {
