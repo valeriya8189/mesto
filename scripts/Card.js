@@ -1,12 +1,16 @@
-import { openPopup, popUpImage, popupElementImage } from "./script.js";
+import { openPopup/*, popUpImage, popupElementImage */ } from "./script.js";
 export class Card {
-    static _template = document.querySelector('#card-template').content;
-    constructor(data) {
+    /*_template = document.querySelector('#card-template').content;*/
+    constructor(data, templateElem, handleCardClick) {
         this._name = data.name;
         this._link = data.link;
+        this._template = templateElem;
+        this._handleCardClick = handleCardClick;
     }
     createCard() {
-        this._view = Card._template.querySelector('.card').cloneNode(true);
+        this._view = this._getTemplate();
+        /* this._view = Card.this._template.querySelector('.card').cloneNode(true);*/
+        /*this._view = document.querySelector('#card-template').content.querySelector('.card').cloneNode(true);*/
         const cardImage = this._view.querySelector('.card__image');
         this._view.querySelector('.card__text').textContent = this._name;
         cardImage.src = this._link;
@@ -15,6 +19,10 @@ export class Card {
         this._handleEventClick();
         return this._view;
     }
+    _getTemplate() {
+        return document.querySelector('#card-template').content.querySelector('.card').cloneNode(true);
+    }
+
     _handleClickDeleteCard = () => {
         this._view.remove();
     }
@@ -33,6 +41,9 @@ export class Card {
         buttonLike.addEventListener('click', this._addLike);
         this._view.querySelector('.card__del').addEventListener('click', this._handleClickDeleteCard);
         //open card
-        cardImage.addEventListener('click', this._zoomImageCard);
+        /*cardImage.addEventListener('click', this._zoomImageCard);*/
+        cardImage.addEventListener('click', () => {
+            this._handleCardClick(this._name, this._link)
+        });
     }
 }

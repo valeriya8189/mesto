@@ -21,7 +21,7 @@ export class FormValidator {
         this._submitElement.classList.remove(this._object.inactiveButtonClass);
     }
 
-    _toggleButtonState(isActive) {
+    toggleButtonState(isActive) {
         if (!isActive) {
             this._disabledButton();
         }
@@ -44,20 +44,23 @@ export class FormValidator {
     _setEventListeners = () => {
         const inputList = this._element.querySelectorAll(this._object.inputSelector);
 
-        this._toggleButtonState();
+        this.toggleButtonState();
 
         [...inputList].forEach((inputItem) => {
             inputItem.addEventListener('input', () => {
                 this._isValid(inputItem);
-                this._toggleButtonState();
+                this.toggleButtonState();
             });
         });
     };
-    enableValidation() {
+    /*enableValidation() {
         const formList = document.querySelectorAll(this._object.formSelector);
         [...formList].forEach((formItem) => {
             this._setEventListeners(formItem);
         });
-    };
+    };*/
+    enableValidation() {
+        this._setEventListeners();
+    }
 }
 
