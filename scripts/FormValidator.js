@@ -71,15 +71,4 @@ export class FormValidator {
     enableValidation() {
         this._setEventListeners();
     }
-    /*
-        resetValidation() {
-            const inputList = this._element.querySelectorAll(this._object.inputSelector);
-            this.toggleButtonState();
-    
-            [...inputList].forEach((input) => {
-                this._hideError(input)
-            });
-    
-        }
-    */
 }

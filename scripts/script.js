@@ -59,7 +59,7 @@ function handleProfileFormSubmit(evt) {
 
 function createCard(item) {
     // тут создаем карточку
-    const cardItem = new Card(item, '.card-template', handleCardClick);
+    const cardItem = new Card(item, '#card-template', handleCardClick);
     const card = cardItem.createCard();
     return card;
 }
