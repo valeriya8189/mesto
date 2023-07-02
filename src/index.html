@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Место</title>
 
-    <link rel="stylesheet" href="./pages/index.css">
+    <!--  <link rel="stylesheet" href="./pages/index.css">-->
 </head>
 
 <body class="page">
     <header class="header block-position">
-        <img class="logo" src="./images/logo.svg" alt="Логотип">
+        <img class="logo" src="<%=require('./images/logo.svg')%>" alt="Логотип">
     </header>
     <main class="content">
         <section class="user block-position">
             <div class="user__description">
-                <img class="user__avatar" src="./images/avatar.jpg" alt="Аватар">
+                <img class="user__avatar" src="<%=require('./images/avatar.jpg')%>" alt="Аватар">
                 <div class="user__form">
                     <div class="user__data">
                         <h1 class="user__name">Жак-Ив Кусто</h1>
                         <button type="button" class="user__button-edit" aria-label="Edit"><img class="user__edit-img"
-                                src="./images/edit.svg" alt="иконка"></button>
+                                src="<%=require('./images/edit.svg')%>" alt="иконка"></button>
                     </div>
                     <p class="user__profile">Исследователь океана</p>
                 </div>
 
             </div>
             <button type="button" class="user__button-add" aria-label="Add"><img class="user__add-img"
-                    src="./images/Vector.svg" alt="иконка"></button>
+                    src="<%=require('./images/Vector.svg')%>" alt="иконка"></button>
         </section>
         <div class="popup popup_type_edit">
             <div class="popup__container">
@@ -43,7 +43,8 @@
                     <button type="submit" class="form__button-submit form__button-submit_edit"
                         disabled>Сохранить</button>
                     <button type="button" class="form__button-close form__button-close_edit" aria-label="Close"><img
-                            class="form__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
+                            class="form__icon-close popup_close" src="<%=require('./images/Close_Icon.svg')%>"
+                            alt="иконка"></button>
                 </form>
             </div>
         </div>
@@ -59,15 +60,17 @@
                     <span class="form__input-error link-input-error" id="link-error"></span>
                     <button type="submit" class="form__button-submit form__button-submit_add">Сохранить</button>
                     <button type="button" class="form__button-close form__button-close_add" aria-label="Close"><img
-                            class="form__icon-close" src="./images/Close_Icon.svg" alt="иконка"></button>
+                            class="form__icon-close popup_close" src="<%=require('./images/Close_Icon.svg')%>"
+                            alt="иконка"></button>
                 </form>
             </div>
         </div>
         <div class="popup popup_type_image">
             <div class="popup__container-image">
                 <img class="popup__image" alt="Изображение">
-                <button type="button" class="popup__button-close" aria-label="Close"><img class="popup__icon-close"
-                        src="./images/Close_Icon.svg" alt="иконка"></button>
+                <button type="button" class="popup__button-close popup_close" aria-label="Close"><img
+                        class="popup__icon-close popup_close" src="<%=require('./images/Close_Icon.svg')%>"
+                        alt="иконка"></button>
             </div>
         </div>
         <section class="cards block-position">
@@ -88,8 +91,8 @@
             </div>
         </div>
     </template>
-    <script defer src="./scripts/cards.js"></script>
-    <script defer src="./scripts/script.js" type="module"></script>
+    <!--    <script defer src="./scripts/cards.js"></script>-->
+    <!--    <script defer src="./scripts/script.js" type="module"></script>-->
 </body>
 
 </html>
