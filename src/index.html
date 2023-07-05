@@ -32,35 +32,35 @@
         </section>
         <div class="popup popup_type_edit">
             <div class="popup__container">
-                <form name="form" class="form form_type_edit" novalidate>
+                <form name="form" class="popup__form popup__form_type_edit" novalidate>
                     <h2 class="form__title">Редактировать профиль</h2>
-                    <input name="name" id="name-input" class="form__input form__input_type_name" type="text"
+                    <input name="name" id="name-input" class="popup__input popup__input_type_name" type="text"
                         value="Жак-Ив Кусто" minlength="2" maxlength="40" required>
-                    <span class="form__input-error name-input-error" id="name-error"></span>
-                    <input name="job" id="job-input" class="form__input form__input_type_profile" type="text"
+                    <span class="popup__input-error name-input-error" id="name-error"></span>
+                    <input name="job" id="job-input" class="popup__input popup__input_type_profile" type="text"
                         value="Исследователь океана" minlength="2" maxlength="200" required>
-                    <span class="form__input-error job-input-error" id="job-error"></span>
-                    <button type="submit" class="form__button-submit form__button-submit_edit"
+                    <span class="popup__input-error job-input-error" id="job-error"></span>
+                    <button type="submit" class="popup__button-submit popup__button-submit_edit"
                         disabled>Сохранить</button>
-                    <button type="button" class="form__button-close form__button-close_edit" aria-label="Close"><img
-                            class="form__icon-close" src="<%=require('./images/Close_Icon.svg')%>"
+                    <button type="button" class="popup__button-close popup__button-close_edit" aria-label="Close"><img
+                            class="popup__icon-close" src="<%=require('./images/Close_Icon.svg')%>"
                             alt="иконка"></button>
                 </form>
             </div>
         </div>
         <div class="popup popup_type_new-card">
             <div class="popup__container">
-                <form name="form" class="form form_type_add" novalidate>
+                <form name="form" class="popup__form form_type_add" novalidate>
                     <h2 class="form__title">Новое место</h2>
-                    <input name="place" class="form__input form__input_type_name-place" type="text"
+                    <input name="place" class="popup__input popup__input_type_name-place" type="text"
                         placeholder="Название" value="" minlength="2" maxlength="30" required>
-                    <span class="form__input-error name-input-error" id="place-error"></span>
-                    <input name="link" class="form__input form__input_type_link" type="url"
+                    <span class="popup__input-error name-input-error" id="place-error"></span>
+                    <input name="link" class="popup__input popup__input_type_link" type="url"
                         placeholder="Ссылка на катинку" value="" required>
-                    <span class="form__input-error link-input-error" id="link-error"></span>
-                    <button type="submit" class="form__button-submit form__button-submit_add">Сохранить</button>
-                    <button type="button" class="form__button-close form__button-close_add" aria-label="Close"><img
-                            class="form__icon-close" src="<%=require('./images/Close_Icon.svg')%>"
+                    <span class="popup__input-error link-input-error" id="link-error"></span>
+                    <button type="submit" class="popup__button-submit popup__button-submit_add">Сохранить</button>
+                    <button type="button" class="popup__button-close popup__button-close_add" aria-label="Close"><img
+                            class="popup__icon-close" src="<%=require('./images/Close_Icon.svg')%>"
                             alt="иконка"></button>
                 </form>
             </div>
@@ -68,6 +68,7 @@
         <div class="popup popup_type_image">
             <div class="popup__container-image">
                 <img class="popup__image" alt="Изображение">
+                <p class="popup__description"></p>
                 <button type="button" class="popup__button-close" aria-label="Close"><img class="popup__icon-close"
                         src="<%=require('./images/Close_Icon.svg')%>" alt="иконка"></button>
             </div>
