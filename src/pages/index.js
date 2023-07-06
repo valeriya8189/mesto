@@ -1,7 +1,7 @@
 
 import './index.css';
 
-import { initialCards, configFormSelector, buttonEditElement, buttonAddElement, popupElementEdit, popupElementNewCard, popUpImage, nameInput, jobInput } from "../components/utils/constants.js";
+import { initialCards, configFormSelector, buttonEditElement, buttonAddElement, popupElementEdit, popupElementNewCard, popUpImage, nameInput, jobInput } from "../utils/constants.js";
 import { Card } from "../components/Card.js";
 import { FormValidator } from "../components/FormValidator.js";
 import { Section } from "../components/Section.js";
