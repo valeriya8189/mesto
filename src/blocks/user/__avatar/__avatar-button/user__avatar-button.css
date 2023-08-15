@@ -1,0 +1,25 @@
+.user__avatar-button {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../../images/avatar-edit-btn.svg");
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    border: 0;
+    border-radius: 50%;
+    transition: .8s ease;
+    padding: 0;
+}
+
+.user__avatar-button:hover {
+    background-color: #000;
+    opacity: .8;
+    cursor: pointer;
+}
+
+@media(max-width:890px) {
+    .user__avatar-button {
+        margin-right: 0;
+    }
+}

@@ -16,20 +16,38 @@
     <main class="content">
         <section class="user block-position">
             <div class="user__description">
-                <img class="user__avatar" src="<%=require('./images/avatar.jpg')%>" alt="Аватар">
+                <!--<img class="user__avatar" src="<%=require('./images/avatar.jpg')%>" alt="Аватар">-->
+                <img class="user__avatar" src=" " alt="">
+                <button class="user__avatar-button"></button>
                 <div class="user__form">
                     <div class="user__data">
+                        <!--<h1 class="user__name">Жак-Ив Кусто</h1>-->
                         <h1 class="user__name">Жак-Ив Кусто</h1>
                         <button type="button" class="user__button-edit" aria-label="Edit"><img class="user__edit-img"
                                 src="<%=require('./images/edit.svg')%>" alt="иконка"></button>
                     </div>
+                    <!--<p class="user__profile">Исследователь океана</p>-->
                     <p class="user__profile">Исследователь океана</p>
                 </div>
-
             </div>
             <button type="button" class="user__button-add" aria-label="Add"><img class="user__add-img"
                     src="<%=require('./images/Vector.svg')%>" alt="иконка"></button>
         </section>
+        <div class="popup popup_type_avatar">
+            <div class="popup__container">
+                <form name="edit-avatar-form" action="#" class="popup__form form" novalidate>
+                    <h2 class="popup__title">Обновить аватар</h2>
+                    <input class="popup__input popup__input_type_avatar-link" name="avatar" id="avatar"
+                        placeholder="Ссылка на картинку" type="url" required>
+                    <span id="avatar-error" class="popup__input-error avatar-input-error"></span>
+                    <button type="submit"
+                        class="popup__button-submit popup__button-submit_edit-avatar">Сохранить</button>
+                    <button type="button" class="popup__button-close popup__button-close_avatar" aria-label="Close"><img
+                            class="popup__icon-close" src="<%=require('./images/Close_Icon.svg')%>"
+                            alt="иконка"></button>
+                </form>
+            </div>
+        </div>
         <div class="popup popup_type_edit">
             <div class="popup__container">
                 <form name="form" class="popup__form popup__form_type_edit" novalidate>
@@ -65,6 +83,18 @@
                 </form>
             </div>
         </div>
+        <div class="popup popup_type_card-delete">
+            <div class="popup__container">
+                <h2 class="popup__title">Вы&nbsp;уверены?</h2>
+                <button type="button" class="popup__button-close"></button>
+                <form action="#" name="card-delete" id="card-delete" class="popup__form popup__form_type_card-delete">
+                    <button type="submit" class="popup__button-submit">Да</button>
+                    <button type="button" class="popup__button-close popup__button-close_card-delete"
+                        aria-label="Close"><img class="popup__icon-close" src="<%=require('./images/Close_Icon.svg')%>"
+                            alt="иконка"></button>
+                </form>
+            </div>
+        </div>
         <div class="popup popup_type_image">
             <div class="popup__container-image">
                 <img class="popup__image" alt="Изображение">
@@ -87,7 +117,10 @@
             </div>
             <div class="card__content">
                 <h3 class="card__text"></h3>
-                <button type="button" class="card__button" aria-label="Like"> </button>
+                <div class="card__elemets-like">
+                    <button type="button" class="card__button" aria-label="Like"> </button>
+                    <span class="card__counter-like">0</span>
+                </div>
             </div>
         </div>
     </template>
